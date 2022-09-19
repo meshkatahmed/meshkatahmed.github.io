@@ -13,3 +13,18 @@ body{
 .about-container{
     background-color: aqua;
 }
+.education-container{
+    background-color: #EEEEEE;
+}
+.redtype{
+    color: #FB857F;
+}
+.redtype:hover{
+    color: black!important;
+}
+.circle{
+    background-color:#FB857F;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
