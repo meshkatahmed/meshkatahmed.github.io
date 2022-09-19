@@ -17,13 +17,13 @@ body{
     background-color: #EEEEEE;
 }
 .redtype{
-    color: #FB857F;
+    color: #92130C;
 }
 .redtype:hover{
     color: black!important;
 }
 .circle{
-    background-color:#FB857F;
+    background-color:#92130C;
     width: 150px;
     height: 150px;
     border-radius: 50%;
