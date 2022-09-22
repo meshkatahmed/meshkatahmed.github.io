@@ -34,3 +34,12 @@ body{
 .project-container{
     background-color:rgb(61, 120, 139);
 }
+.contact-container{
+    background-color:darkgray;
+}
+.bumpy-box{
+    font-size: 72px;
+}
+.inner-form{
+    background-color: #585F73;
+}
