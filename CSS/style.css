@@ -9,6 +9,9 @@ body{
 }
 .navbar-container{
     background-color: #05102c;
+    top: 0;
+    position: sticky;
+    z-index: 1;
 }
 .about-container{
     background-color: aqua;
