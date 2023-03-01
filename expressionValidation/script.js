@@ -41,5 +41,16 @@ function validatePhoneNumber(e){
 }
 function validatePostalCode(e){
     let exp = prompt('Enter your postal code: ');
-    console.log(exp);
+    let re = /^\d{4}$/;
+    if (exp===''){
+        alert('You didn\'t enter your postal code!');
+    } else if (exp===null){
+        alert('You have cancelled postal code validation!');
+    } else {
+        if (re.test(exp)){
+            alert('Your postal code is a valid Bangladeshi postal code!');
+        } else {
+            alert('Your postal code is not a valid Bangladeshi postal code!');
+        }
+    }
 }
