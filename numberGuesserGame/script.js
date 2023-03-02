@@ -7,11 +7,14 @@ let numberInput = document.getElementById('guess-number');
 let max = 10;
 let correct_ans = Math.floor(Math.random()*max)+1;
 
-//Event listener
-button.addEventListener('click',evaluate);
-
-//Extra element
+//Extra UI elements
 let message = document.createElement('div');
+let reload = document.createElement('button');
+reload.innerText = 'Restart';
+
+//Event listeners
+button.addEventListener('click',evaluate);
+reload.addEventListener('click',reloadDocument);
 
 //Decider variable
 let left = 3;
@@ -19,7 +22,7 @@ let left = 3;
 //Function
 function evaluate(e){
     if (numberInput.value===''){
-        alert('Put a number!');
+        alert('Enter a number in the field!');
     } else {
         if (numberInput.value>correct_ans){
             alert('Correct answer is smaller!');
@@ -41,6 +44,8 @@ function evaluate(e){
             message.innerText = 'You Win!!';
             message.setAttribute('class','success');
             main.appendChild(message);
+            main.appendChild(document.createElement('br'));
+            main.appendChild(reload);
         }
     }
 
@@ -50,5 +55,11 @@ function evaluate(e){
         message.innerText = 'Game over! You Lose!!';
         message.setAttribute('class','failed');
         main.appendChild(message);
+        main.appendChild(document.createElement('br'));
+        main.appendChild(reload);
     }
+}
+
+function reloadDocument(e){
+    location.reload();
 }
